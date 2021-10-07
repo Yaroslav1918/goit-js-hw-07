@@ -4,8 +4,7 @@ inputEl.addEventListener('blur', onInputCheck)
 
 
 function onInputCheck(event) {
-    if (event.currentTarget.value.length >= 6) {
-       return inputEl.classList.add('valid')
+    return  event.currentTarget.value.length >= 6 ? inputEl.classList.add('valid') : inputEl.classList.add('invalid')
+      
     }
-    return inputEl.classList.add('invalid')
-}
+    
